@@ -40,4 +40,10 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
  * nulo:Optional.of()
  * EJEM:Optional<String> nombre = Optional.of("Patrick");
  * 
+ * 
+ * Optional<Usuario> findByEmail(String email)
+ * 
+ * Este método busca un Usuario en la base de datos por su email.
+ * Devuelve un Optional porque el usuario puede existir… o no.
+ * 
  */
